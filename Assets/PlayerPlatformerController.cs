@@ -8,6 +8,8 @@ public class PlayerPlatformerController : PhysicsObject
 
     public float jumpTakeOffSpeed = 7;
 
+    private int numberJump =0;
+
     private SpriteRenderer spriteRenderer;
 
     private Animator animator;
@@ -29,6 +31,12 @@ public class PlayerPlatformerController : PhysicsObject
         if(Input.GetButtonDown("Jump")&&grounded)
         {
             velocity.y = jumpTakeOffSpeed;
+            numberJump = 1;
+        }
+        else if(Input.GetButtonDown("Jump")&&numberJump<2)
+        {
+            velocity.y = jumpTakeOffSpeed;
+            numberJump++;
         }
         else if (Input.GetButtonUp("Jump"))
         {
@@ -36,6 +44,10 @@ public class PlayerPlatformerController : PhysicsObject
             {
                 velocity.y = velocity.y * 0.5f;
             }
+        }
+        else if (grounded)
+        {
+            numberJump = 0;
         }
 
         bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
