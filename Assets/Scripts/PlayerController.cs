@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject m_HeartsComponent;
     private int m_Life = 3;
+    public float m_Speed;
     void Start()
     {
         
@@ -29,7 +31,17 @@ public class PlayerController : MonoBehaviour
                     print(i);
                     m_HeartsComponent.transform.GetChild(i).gameObject.SetActive(false);
                 }
+                //Jouer animation clignotement
             }
+            if (m_Life == 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.position = new Vector3(transform.position.x + m_Speed, transform.position.y);
         }
     }
 }
