@@ -25,23 +25,34 @@ public class PlayerController : MonoBehaviour
 
                 m_Life--;
                 int l_HeartsCount = m_HeartsComponent.transform.childCount;
-                print("hearts = " + l_HeartsCount);
                 for (int i = 0; i < l_HeartsCount - m_Life; i++)
                 {
-                    print(i);
                     m_HeartsComponent.transform.GetChild(i).gameObject.SetActive(false);
                 }
                 //Jouer animation clignotement
             }
-            if (m_Life == 0)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
+        }
+        if (m_Life == 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        RectTransform l_Rect = (RectTransform)transform;
+        if (transform.position.y <= -l_Rect.rect.height/2)
+        {
+            SceneManager.LoadScene("GameOver");
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             transform.position = new Vector3(transform.position.x + m_Speed, transform.position.y);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D p_Collision)
+    {
+        if (p_Collision.gameObject.tag.Equals("Enemy"))
+        {
+            m_Life--;
         }
     }
 }
