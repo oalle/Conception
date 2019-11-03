@@ -6,6 +6,9 @@ public class Ennemy : MonoBehaviour
 {
     public float speed;
     public float distance;
+    public AudioClip deathClip;
+    public AudioClip moveClip;
+    AudioSource audioSource;
 
     private Animator anim;
     private bool isAlive = true;
@@ -16,16 +19,13 @@ public class Ennemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //GameManager.instance.AddEnemyToList (this);
         anim = GetComponent<Animator>();
-        //target = GameObject.FindGameObjectWithTag ("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
         anim.SetBool("isMoving", true);
-        //anim.SetBool("facePlayer", false);
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
@@ -33,58 +33,41 @@ public class Ennemy : MonoBehaviour
         {
             if(movingRight == true) 
             {
-                //anim.SetBool("isMoving", true);
+
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 movingRight = false;
                 StartCoroutine(Movement());
-//                speed = 2;
             }
             else
             {
-                //anim.SetBool("isMoving", true);
                 transform.eulerAngles = new Vector3(0, 0, 0);
                 movingRight = true;
                 StartCoroutine(Movement());
-//                speed = 2;
+
             }
         }
-
     }
 
     IEnumerator Movement()
     {
-//        print(Time.time);
-        anim.SetBool("isMoving", false);
-        int repeat = 5;
-//        for(int i = 0 ; i < repeat ; i++)
-//        {
+        anim.SetBool("isMoving", false);   
+        anim.Play("Ennemy_idle");
 
-            
-            anim.Play("Ennemy_idle");
-
-            speed = 0;
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
+        speed = 0;
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
 
 
-            float counter = 0;
-            float waitTime = anim.GetCurrentAnimatorStateInfo(0).length;
+        float counter = 0;
+        float waitTime = anim.GetCurrentAnimatorStateInfo(0).length;
 
-            //Now, Wait until the current state is done playing
-            while (counter < (waitTime))
-            {
-                counter += Time.deltaTime;
-                yield return null;
-            }
-
-
-    //        anim.SetBool("facePlayer", true);
-
-            //yield return new WaitForSeconds (anim["Ennemy_attack"].length);
-            //yield return new WaitForSeconds(5);
-            speed = 2;
-    //        print(Time.time);
-
-//        }
+        //Now, Wait until the current state is done playing
+        while (counter < (waitTime))
+        {
+            counter += Time.deltaTime;
+            yield return null;
+        }
+        speed = 2;
+        AudioSource.PlayClipAtPoint (moveClip, transform.position);
     }
 
     IEnumerator Death()
@@ -101,12 +84,15 @@ public class Ennemy : MonoBehaviour
             float counter = 0;
             float waitTime = anim.GetCurrentAnimatorStateInfo(0).length;
 
+            AudioSource.PlayClipAtPoint (deathClip, transform.position);
+
             //Now, Wait until the current state is done playing
             while (counter < 5*(waitTime))
             {
                 counter += Time.deltaTime;
                 yield return null;
             }
+
             Destroy(gameObject);
     }
 
