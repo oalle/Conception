@@ -46,6 +46,18 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x + m_Speed, transform.position.y);
         }
+        if (Input.GetKey(KeyCode.Q))
+        {
+            transform.position = new Vector3(transform.position.x - m_Speed, transform.position.y);
+        }
+        if(m_Life != 3)
+        {
+            int l_HeartsCount = m_HeartsComponent.transform.childCount;
+            for (int i = 0; i < l_HeartsCount - m_Life; i++)
+            {
+                m_HeartsComponent.transform.GetChild(i).gameObject.SetActive(false);
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D p_Collision)
