@@ -10,15 +10,18 @@ public class PlayerController : MonoBehaviour
     public GameObject m_HeartsComponent;
     private int m_Life = 3;
     public float m_Speed;
+    public GameObject m_GameOverText;
+    public GameObject m_RestartButton;
     void Start()
     {
-        
+        m_GameOverText.SetActive(false);
+        m_RestartButton.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        /*if (Input.GetKeyDown(KeyCode.T))
         {
             if (m_Life != 0)
             {
@@ -31,10 +34,12 @@ public class PlayerController : MonoBehaviour
                 }
                 //Jouer animation clignotement
             }
-        }
+        }*/
         if (m_Life == 0)
         {
-            SceneManager.LoadScene("GameOver");
+            SoundManagerScript.PlaySound("PlayerDeath");
+            m_GameOverText.SetActive(true);
+            m_RestartButton.SetActive(true);
         }
         RectTransform l_Rect = (RectTransform)transform;
         if (transform.position.y <= -l_Rect.rect.height/2)
@@ -64,6 +69,7 @@ public class PlayerController : MonoBehaviour
     {
         if (p_Collision.gameObject.tag.Equals("Enemy"))
         {
+            SoundManagerScript.PlaySound("PlayerHit");
             m_Life--;
         }
     }
