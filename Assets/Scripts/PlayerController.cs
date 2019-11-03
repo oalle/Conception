@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,8 +13,18 @@ public class PlayerController : MonoBehaviour
     public float m_Speed;
     public GameObject m_GameOverText;
     public GameObject m_RestartButton;
+
+    int m_PlayerLayer, m_EnemyLayer;
+    bool m_CoroutineAllowed = true;
+    Image m_Sprite;
     void Start()
     {
+        m_PlayerLayer = this.gameObject.layer;
+        m_EnemyLayer = LayerMask.NameToLayer("Enemy");
+        Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, false);
+        m_Sprite = GetComponent<Image>();
+
+
         m_GameOverText.SetActive(false);
         m_RestartButton.SetActive(false);
     }
@@ -40,6 +51,7 @@ public class PlayerController : MonoBehaviour
             SoundManagerScript.PlaySound("PlayerDeath");
             m_GameOverText.SetActive(true);
             m_RestartButton.SetActive(true);
+            gameObject.SetActive(false);
         }
         RectTransform l_Rect = (RectTransform)transform;
         if (transform.position.y <= -l_Rect.rect.height/2)
@@ -71,6 +83,25 @@ public class PlayerController : MonoBehaviour
         {
             SoundManagerScript.PlaySound("PlayerHit");
             m_Life--;
+            if (m_CoroutineAllowed)
+            {
+                StartCoroutine("Immortal");
+            }
         }
+    }
+
+    IEnumerator Immortal()
+    {
+        m_CoroutineAllowed = false;
+        Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, true);
+        var tempColor = m_Sprite.color;
+        tempColor.a = 0.5f;
+        m_Sprite.color = tempColor;
+        yield return new WaitForSeconds(3f);
+        m_CoroutineAllowed = true;
+        Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, false);
+        var tempColor2 = m_Sprite.color;
+        tempColor2.a = 1f;
+        m_Sprite.color = tempColor2;
     }
 }
