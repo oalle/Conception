@@ -19,6 +19,6 @@ public class Restart : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("UI_Platform");
+        SceneManager.LoadScene("Gestion");
     }
 }
