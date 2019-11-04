@@ -12,6 +12,7 @@ public class LifeController : MonoBehaviour
     private int m_Life = 3;
     public GameObject m_GameOverText;
     public GameObject m_RestartButton;
+    public GameObject m_Canvas;
 
     int m_PlayerLayer, m_EnemyLayer;
     bool m_CoroutineAllowed = true;
@@ -38,17 +39,12 @@ public class LifeController : MonoBehaviour
             SoundManagerScript.PlaySound("PlayerDeath");
             m_GameOverText.SetActive(true);
             m_RestartButton.SetActive(true);
-            gameObject.SetActive(false);
+            m_Color.a = 0f;
+            m_Sprite.material.color = m_Color;
+            m_Canvas.SetActive(false);
+            
         }
-        Transform l_Rect = transform;
-        if (transform.position.y <= -l_Rect.localScale.y/2)
-        {
-            SoundManagerScript.PlaySound("PlayerDeath");
-            m_GameOverText.SetActive(true);
-            m_RestartButton.SetActive(true);
-            gameObject.SetActive(false);
-        }
-        if(m_Life != 3)
+        else if (m_Life != 3)
         {
             int l_HeartsCount = m_HeartsComponent.transform.childCount;
             for (int i = 0; i < l_HeartsCount - m_Life; i++)
@@ -56,11 +52,22 @@ public class LifeController : MonoBehaviour
                 m_HeartsComponent.transform.GetChild(i).gameObject.SetActive(false);
             }
         }
+        Transform l_Rect = transform;
+        if (transform.position.y <= -30/2)
+        {
+            SoundManagerScript.PlaySound("PlayerDeath");
+            m_GameOverText.SetActive(true);
+            m_RestartButton.SetActive(true);
+            m_Color.a = 0f;
+            m_Sprite.material.color = m_Color;
+            m_Canvas.SetActive(false);
+        }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D p_Collision)
     {
-        if (p_Collision.gameObject.tag.Equals("Ennemy"))
+        if (p_Collision.gameObject.tag.Equals("Enemy"))
         {
             SoundManagerScript.PlaySound("PlayerHit");
             m_Life--;
