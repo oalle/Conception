@@ -6,6 +6,12 @@ public class PlayerPlatformerController : PhysicsObject
 {
     public float maxSpeed = 7;
 
+    public AudioClip saut;
+
+    public AudioClip marche;
+
+    protected AudioSource source;
+
     public float jumpTakeOffSpeed = 7;
 
     private int numberJump =0;
@@ -17,6 +23,7 @@ public class PlayerPlatformerController : PhysicsObject
     // Start is called before the first frame update
     void Awake()
     {
+        source = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
@@ -28,13 +35,33 @@ public class PlayerPlatformerController : PhysicsObject
 
         move.x = Input.GetAxis("Horizontal");
 
-        if(Input.GetButtonDown("Jump")&&grounded)
+        if(grounded)
         {
+            if (move.magnitude > minMoveDist)
+            {
+                if (!source.isPlaying)
+                    source.PlayOneShot(marche);
+            }
+            else
+            {
+               // source.Stop();
+            }
+        }
+        else
+        {
+            //source.Stop(); ;
+        }
+
+
+        if (Input.GetButtonDown("Jump")&&grounded)
+        {
+            source.PlayOneShot(saut);
             velocity.y = jumpTakeOffSpeed;
             numberJump = 1;
         }
         else if(Input.GetButtonDown("Jump")&&numberJump<2)
         {
+            source.PlayOneShot(saut);
             velocity.y = jumpTakeOffSpeed;
             numberJump++;
         }

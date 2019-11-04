@@ -65,9 +65,17 @@
     <Compile Include="Assets\2DPlatformerController\Assets\2DPlatformer\Scripts\DeadzoneCamera.cs" />
     <Compile Include="Assets\2DPlatformerController\Assets\2DPlatformer\Scripts\PerfectPixel.cs" />
     <Compile Include="Assets\autoMoveCrate.cs" />
+    <Compile Include="Assets\C# Script\Ennemy.cs" />
     <Compile Include="Assets\PhysicsObject.cs" />
     <Compile Include="Assets\PlayerPlatformerController.cs" />
     <Compile Include="Assets\Script\Controller.cs" />
+    <Compile Include="Assets\Scripts\BackGroundMusic.cs" />
+    <Compile Include="Assets\Scripts\ButtonManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayScene.cs" />
+    <Compile Include="Assets\Scripts\Restart.cs" />
+    <Compile Include="Assets\Scripts\SoundManagerScript.cs" />
+    <Compile Include="Assets\Scripts\StopBGMusic.cs" />
     <None Include="Assets\2DPlatformerController\ProjectSettings\ProjectVersion.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/nathan/Documents/GitHub/Conception/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

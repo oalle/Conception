@@ -35,6 +35,7 @@ public class PhysicsObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         contactFilter.useTriggers = false;
 
         contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
@@ -48,6 +49,8 @@ public class PhysicsObject : MonoBehaviour
         targetVelocity = Vector2.zero;
 
         ComputeVelocity();
+
+        
     }
 
     protected virtual void ComputeVelocity()
@@ -82,6 +85,7 @@ public class PhysicsObject : MonoBehaviour
 
         if(distance>minMoveDist)
         {
+
             int count=rb2d.Cast(move, contactFilter, hitBuffer,distance+shellRadius);
 
             hitBufferList.Clear();
@@ -119,6 +123,7 @@ public class PhysicsObject : MonoBehaviour
                 distance = modifiedDistance < distance ? modifiedDistance : distance;
             }
         }
+        
 
         rb2d.position = rb2d.position + move.normalized * distance;
     }
