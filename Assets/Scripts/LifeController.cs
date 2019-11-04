@@ -4,25 +4,26 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class LifeController : MonoBehaviour
 {
     // Start is called before the first frame update
 
     public GameObject m_HeartsComponent;
     private int m_Life = 3;
-    public float m_Speed;
     public GameObject m_GameOverText;
     public GameObject m_RestartButton;
 
     int m_PlayerLayer, m_EnemyLayer;
     bool m_CoroutineAllowed = true;
-    Image m_Sprite;
+    Renderer m_Sprite;
+    Color m_Color;
     void Start()
     {
         m_PlayerLayer = this.gameObject.layer;
-        m_EnemyLayer = LayerMask.NameToLayer("Enemy");
+        m_EnemyLayer = LayerMask.NameToLayer("Ennemy");
         Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, false);
-        m_Sprite = GetComponent<Image>();
+        m_Sprite = GetComponent<Renderer>();
+        m_Color = m_Sprite.material.color;
 
 
         m_GameOverText.SetActive(false);
@@ -32,20 +33,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.T))
-        {
-            if (m_Life != 0)
-            {
-
-                m_Life--;
-                int l_HeartsCount = m_HeartsComponent.transform.childCount;
-                for (int i = 0; i < l_HeartsCount - m_Life; i++)
-                {
-                    m_HeartsComponent.transform.GetChild(i).gameObject.SetActive(false);
-                }
-                //Jouer animation clignotement
-            }
-        }*/
         if (m_Life == 0)
         {
             SoundManagerScript.PlaySound("PlayerDeath");
@@ -53,19 +40,13 @@ public class PlayerController : MonoBehaviour
             m_RestartButton.SetActive(true);
             gameObject.SetActive(false);
         }
-        RectTransform l_Rect = (RectTransform)transform;
-        if (transform.position.y <= -l_Rect.rect.height/2)
+        Transform l_Rect = transform;
+        if (transform.position.y <= -l_Rect.localScale.y/2)
         {
-            SceneManager.LoadScene("GameOver");
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position = new Vector3(transform.position.x + m_Speed, transform.position.y);
-        }
-        if (Input.GetKey(KeyCode.Q))
-        {
-            transform.position = new Vector3(transform.position.x - m_Speed, transform.position.y);
+            SoundManagerScript.PlaySound("PlayerDeath");
+            m_GameOverText.SetActive(true);
+            m_RestartButton.SetActive(true);
+            gameObject.SetActive(false);
         }
         if(m_Life != 3)
         {
@@ -79,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D p_Collision)
     {
-        if (p_Collision.gameObject.tag.Equals("Enemy"))
+        if (p_Collision.gameObject.tag.Equals("Ennemy"))
         {
             SoundManagerScript.PlaySound("PlayerHit");
             m_Life--;
@@ -94,14 +75,12 @@ public class PlayerController : MonoBehaviour
     {
         m_CoroutineAllowed = false;
         Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, true);
-        var tempColor = m_Sprite.color;
-        tempColor.a = 0.5f;
-        m_Sprite.color = tempColor;
+        m_Color.a = 0.5f;
+        m_Sprite.material.color = m_Color;
         yield return new WaitForSeconds(3f);
         m_CoroutineAllowed = true;
         Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, false);
-        var tempColor2 = m_Sprite.color;
-        tempColor2.a = 1f;
-        m_Sprite.color = tempColor2;
+        m_Color.a = 1f;
+        m_Sprite.material.color = m_Color;
     }
 }
