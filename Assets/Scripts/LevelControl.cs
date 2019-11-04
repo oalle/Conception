@@ -32,7 +32,7 @@ public class LevelControl : MonoBehaviour
 
     IEnumerator Exit()
     {
-    	yield return new WaitForSeconds(5);
+    	yield return new WaitForSeconds(2);
     	customImage.enabled = false;
    		SceneManager.LoadScene("Gestion");
     }

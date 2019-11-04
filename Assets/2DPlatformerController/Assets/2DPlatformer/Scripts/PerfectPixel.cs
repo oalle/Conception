@@ -37,7 +37,7 @@ namespace Complete
 
         void UpdateOrthoSize()
         {
-            lastSize = Screen.height;
+            lastSize = 120;
 
             // first find the reference orthoSize
             float refOrthoSize = (referenceOrthographicSize / referencePixelsPerUnit) * 0.5f;
