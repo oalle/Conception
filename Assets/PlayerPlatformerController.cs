@@ -16,6 +16,8 @@ public class PlayerPlatformerController : PhysicsObject
 
     private int numberJump =0;
 
+    private bool sprint = false;
+
     private SpriteRenderer spriteRenderer;
 
     private Animator animator;
@@ -52,7 +54,18 @@ public class PlayerPlatformerController : PhysicsObject
             //source.Stop(); ;
         }
 
+      /*  if (Input.GetButtonDown("")&&grounded&&!sprint)
+        {
+            maxSpeed = maxSpeed + 2;
+            sprint = true;
+        }
 
+        if (Input.GetButtonUp("") && grounded&&sprint)
+        {
+            maxSpeed = maxSpeed - 2;
+            sprint = false;
+        }
+        */
         if (Input.GetButtonDown("Jump")&&grounded)
         {
             source.PlayOneShot(saut);
