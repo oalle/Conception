@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ennemy : MonoBehaviour
 {
     public float speed;
+    private float spid;
     public float distance;
     public AudioClip deathClip;
     public AudioClip moveClip;
@@ -20,6 +21,7 @@ public class Ennemy : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        spid = speed;
     }
 
     // Update is called once per frame
@@ -66,7 +68,7 @@ public class Ennemy : MonoBehaviour
             counter += Time.deltaTime;
             yield return null;
         }
-        speed = 2;
+        speed = spid;
         AudioSource.PlayClipAtPoint (moveClip, transform.position);
     }
 
