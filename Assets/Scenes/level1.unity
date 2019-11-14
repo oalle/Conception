@@ -8669,7 +8669,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1437403162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9061,7 +9061,7 @@ MonoBehaviour:
   m_HeartsComponent: {fileID: 313524131}
   m_GameOverText: {fileID: 1636497999}
   m_RestartButton: {fileID: 2027342417}
-  m_Canvas: {fileID: 1410137145}
+  m_Canvas: {fileID: 0}
 --- !u!212 &1739163570 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 212991655389708426, guid: e7fcecc826687024e9b52ec763b14088,

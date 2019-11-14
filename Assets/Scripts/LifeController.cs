@@ -36,12 +36,13 @@ public class LifeController : MonoBehaviour
     {
         if (m_Life == 0)
         {
-            SoundManagerScript.PlaySound("PlayerDeath");
+            /*SoundManagerScript.PlaySound("PlayerDeath");
             m_GameOverText.SetActive(true);
             m_RestartButton.SetActive(true);
             m_Color.a = 0f;
             m_Sprite.material.color = m_Color;
-            m_Canvas.SetActive(false);
+            m_Canvas.SetActive(false);*/
+            SceneManager.LoadScene("LevelFinish");
             
         }
         else if (m_Life != 3)
@@ -55,12 +56,13 @@ public class LifeController : MonoBehaviour
         Transform l_Rect = transform;
         if (transform.position.y <= -30/2)
         {
-            SoundManagerScript.PlaySound("PlayerDeath");
+            /*SoundManagerScript.PlaySound("PlayerDeath");
             m_GameOverText.SetActive(true);
             m_RestartButton.SetActive(true);
             m_Color.a = 0f;
             m_Sprite.material.color = m_Color;
-            m_Canvas.SetActive(false);
+            m_Canvas.SetActive(false);*/
+            SceneManager.LoadScene("LevelFinish");
         }
         
     }
