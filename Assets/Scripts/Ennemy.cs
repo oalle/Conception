@@ -98,11 +98,38 @@ public class Ennemy : MonoBehaviour
             Destroy(gameObject);
     }
 
+    IEnumerator Attack()
+    {
+        anim.SetBool("isMoving", false);
+
+        anim.Play("Ennemy_attack");
+
+        speed = 0;
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+
+        float counter = 0;
+        float waitTime = anim.GetCurrentAnimatorStateInfo(0).length;
+
+        AudioSource.PlayClipAtPoint(deathClip, transform.position);
+
+        //Now, Wait until the current state is done playing
+        while (counter < waitTime)
+        {
+            counter += Time.deltaTime;
+            yield return null;
+        }
+        speed = spid;
+    }
+
     void OnCollisionEnter2D(Collision2D col)
     {
         if(col.gameObject.tag.Equals ("Player_attack"))
         {
             StartCoroutine(Death());
+        }
+        else if(col.gameObject.tag.Equals("Player"))
+        {
+            StartCoroutine(Attack());
         }
     }
 }
