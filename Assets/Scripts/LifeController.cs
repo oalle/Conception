@@ -69,12 +69,19 @@ public class LifeController : MonoBehaviour
     {
         if (p_Collision.gameObject.tag.Equals("Enemy"))
         {
-            SoundManagerScript.PlaySound("PlayerHit");
-            m_Life--;
-            if (m_CoroutineAllowed)
+            if (p_Collision.transform.position.y < this.transform.position.y)
             {
-                StartCoroutine("Immortal");
+
+            } else
+            {
+                SoundManagerScript.PlaySound("PlayerHit");
+                m_Life--;
+                if (m_CoroutineAllowed)
+                {
+                    StartCoroutine("Immortal");
+                }
             }
+            
         }
     }
 

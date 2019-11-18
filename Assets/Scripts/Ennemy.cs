@@ -10,6 +10,7 @@ public class Ennemy : MonoBehaviour
     public AudioClip deathClip;
     public AudioClip moveClip;
     AudioSource audioSource;
+    Collider m_Collider;
 
     private Animator anim;
     private bool isAlive = true;
@@ -22,6 +23,7 @@ public class Ennemy : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         spid = speed;
+        m_Collider = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -98,10 +100,9 @@ public class Ennemy : MonoBehaviour
             Destroy(gameObject);
     }
 
-    IEnumerator Attack()
+    IEnumerator Attack(Collision2D col)
     {
         anim.SetBool("isMoving", false);
-
         anim.Play("Ennemy_attack");
 
         speed = 0;
@@ -118,6 +119,13 @@ public class Ennemy : MonoBehaviour
             counter += Time.deltaTime;
             yield return null;
         }
+
+     /*   while (col.gameObject.tag.Equals("Player"))
+        {
+         //   counter += Time.deltaTime;
+            yield return null;
+        }*/
+
         speed = spid;
     }
 
@@ -129,7 +137,18 @@ public class Ennemy : MonoBehaviour
         }
         else if(col.gameObject.tag.Equals("Player"))
         {
-            StartCoroutine(Attack());
-        }
+           // while (col.gameObject.tag.Equals("Player"))
+            if(col.transform.position.y > this.transform.position.y + 0.1)
+            {
+                //m_Collider.enabled = !m_Collider.enabled;
+                StartCoroutine(Death());
+            } else
+            {
+                StartCoroutine(Attack(col));
+            }
+        } /*else
+        {
+            StartCoroutine(Attack(col));
+        }*/
     }
 }
