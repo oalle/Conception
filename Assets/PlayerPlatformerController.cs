@@ -54,18 +54,18 @@ public class PlayerPlatformerController : PhysicsObject
             //source.Stop(); ;
         }
 
-      /*  if (Input.GetButtonDown("")&&grounded&&!sprint)
+        if (Input.GetButtonDown("Sprint")&&grounded&&!sprint)
         {
-            maxSpeed = maxSpeed + 2;
+            maxSpeed = maxSpeed * 1.8f;
             sprint = true;
         }
 
-        if (Input.GetButtonUp("") && grounded&&sprint)
+        if (Input.GetButtonUp("Sprint") && grounded&&sprint)
         {
-            maxSpeed = maxSpeed - 2;
+            maxSpeed = maxSpeed / 1.8f;
             sprint = false;
         }
-        */
+        
         if (Input.GetButtonDown("Jump")&&grounded)
         {
             source.PlayOneShot(saut);

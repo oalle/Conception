@@ -37,7 +37,7 @@ namespace Complete
 
         void UpdateOrthoSize()
         {
-            lastSize = 120;
+            lastSize = 1500;
 
             // first find the reference orthoSize
             float refOrthoSize = (referenceOrthographicSize / referencePixelsPerUnit) * 0.5f;
