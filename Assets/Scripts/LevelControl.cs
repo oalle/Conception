@@ -34,6 +34,6 @@ public class LevelControl : MonoBehaviour
     {
     	yield return new WaitForSeconds(2);
     	customImage.enabled = false;
-   		SceneManager.LoadScene("Gestion");
+   		SceneManager.LoadScene("LevelFinishVictory");
     }
 }

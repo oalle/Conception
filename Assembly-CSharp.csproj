@@ -71,11 +71,10 @@
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\Ennemy.cs" />
+    <Compile Include="Assets\Scripts\Feedbacks.cs" />
     <Compile Include="Assets\Scripts\LevelControl.cs" />
     <Compile Include="Assets\Scripts\LifeController.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayScene.cs" />
-    <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\SoundManagerDeath.cs" />
     <Compile Include="Assets\Scripts\SoundManagerScript.cs" />
     <Compile Include="Assets\Scripts\StopBGMusic.cs" />

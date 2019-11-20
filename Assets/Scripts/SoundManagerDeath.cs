@@ -5,7 +5,6 @@ using UnityEngine;
 public class SoundManagerDeath : MonoBehaviour
 {
     public static AudioClip m_PlayerDeathSound;
-    public GameObject m_GameOverText;
     static AudioSource m_AudioSource;
     // Start is called before the first frame update
     void Start()
@@ -13,8 +12,7 @@ public class SoundManagerDeath : MonoBehaviour
         m_PlayerDeathSound = Resources.Load<AudioClip>("PlayerDeath");
 
         m_AudioSource = GetComponent<AudioSource>();
-        if(m_GameOverText.activeSelf)
-            PlaySound("PlayerDeath");
+        PlaySound("PlayerDeath");
     }
 
     // Update is called once per frame
