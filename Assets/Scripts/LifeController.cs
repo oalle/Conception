@@ -10,9 +10,6 @@ public class LifeController : MonoBehaviour
 
     public GameObject m_HeartsComponent;
     private  static int m_Life = 3;
-    public GameObject m_GameOverText;
-    public GameObject m_RestartButton;
-    public GameObject m_Canvas;
 
     
 
@@ -27,10 +24,6 @@ public class LifeController : MonoBehaviour
         Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, false);
         m_Sprite = GetComponent<Renderer>();
         m_Color = m_Sprite.material.color;
-
-
-        m_GameOverText.SetActive(false);
-        m_RestartButton.SetActive(false);
     }
 
     // Update is called once per frame

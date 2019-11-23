@@ -11,14 +11,14 @@ public class Feedbacks : MonoBehaviour
     public UnityEngine.UI.Text m_Enemies, m_Woods, m_Stones, m_Irons;
     void Start()
     {
-        int l_Woods = PlayerPlatformerController.GetWoods();
+        int l_Woods = GetResources.GetWood();
         m_Woods.text = l_Woods.ToString();
-        int l_Stones = PlayerPlatformerController.GetStones();
+        int l_Stones = GetResources.GetStone();
         m_Stones.text = l_Stones.ToString();
-        int l_Irons = PlayerPlatformerController.GetIrons();
+        int l_Irons = GetResources.GetIron();
         m_Irons.text = l_Irons.ToString();
-        int l_Enemies = PlayerPlatformerController.GetEnemies();
-        m_Enemies.text = l_Enemies.ToString();
+        /*int l_Enemies = GetResources.GetEnemies();
+        m_Enemies.text = l_Enemies.ToString();*/
         if (m_FullHearts != null)
         {
             int l_Life = LifeController.GetLife();

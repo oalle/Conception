@@ -22,8 +22,6 @@ public class PlayerPlatformerController : PhysicsObject
 
     private Animator animator;
 
-    private static int m_Woods, m_Stones, m_Irons, m_Enemies = 0;
-
     // Start is called before the first frame update
     void Awake()
     {
@@ -104,26 +102,5 @@ public class PlayerPlatformerController : PhysicsObject
         animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 
         targetVelocity = move * maxSpeed;
-    }
-
-    public static int GetWoods()
-    {
-        m_Woods++;
-        return m_Woods;
-    }
-
-    public static int GetStones()
-    {
-        return m_Stones;
-    }
-
-    public static int GetIrons()
-    {
-        return m_Irons;
-    }
-
-    public static int GetEnemies()
-    {
-        return m_Enemies;
     }
 }
