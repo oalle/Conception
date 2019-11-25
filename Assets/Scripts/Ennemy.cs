@@ -6,10 +6,15 @@ public class Ennemy : MonoBehaviour
 {
     public float speed;
     private float spid;
+    private bool dead = false;
     public float distance;
+//    private float y;
+    int m_PlayerLayer, m_EnemyLayer;
     public AudioClip deathClip;
     public AudioClip moveClip;
+    public AudioClip attackClip;
     AudioSource audioSource;
+    BoxCollider2D m_Collider;
 
     private Animator anim;
     private bool isAlive = true;
@@ -22,6 +27,10 @@ public class Ennemy : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         spid = speed;
+        m_Collider = GetComponent<BoxCollider2D>();
+//        y = this.transform.position.y;
+        m_EnemyLayer = this.gameObject.layer;
+        m_PlayerLayer = LayerMask.NameToLayer("Player");
     }
 
     // Update is called once per frame
@@ -78,31 +87,83 @@ public class Ennemy : MonoBehaviour
         anim.SetBool("isAttack", true);
         anim.SetBool("isAlive", false);
 
-            anim.Play("Ennemy_die");
+        anim.Play("Ennemy_die");
 
-            speed = 0;
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
+        speed = 0;
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
 
-            float counter = 0;
-            float waitTime = anim.GetCurrentAnimatorStateInfo(0).length;
+        float counter = 0;
+        float waitTime = anim.GetCurrentAnimatorStateInfo(0).length;
 
-            AudioSource.PlayClipAtPoint (deathClip, transform.position);
+        AudioSource.PlayClipAtPoint (deathClip, transform.position);
 
-            //Now, Wait until the current state is done playing
-            while (counter < 5*(waitTime))
-            {
-                counter += Time.deltaTime;
-                yield return null;
-            }
+        //Now, Wait until the current state is done playing
+        while (counter < 5*(waitTime))
+        {
+            counter += Time.deltaTime;
+            yield return null;
+        }
 
-            Destroy(gameObject);
+        Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, false);
+        Destroy(gameObject);
+    }
+
+    IEnumerator Attack(Collision2D col)
+    {
+        anim.SetBool("isMoving", false);
+        anim.Play("Ennemy_attack");
+
+        speed = 0;
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+
+        float counter = 0;
+        float waitTime = anim.GetCurrentAnimatorStateInfo(0).length;
+
+        AudioSource.PlayClipAtPoint(attackClip, transform.position);
+
+        //Now, Wait until the current state is done playing
+        while (counter < waitTime)
+        {
+            counter += Time.deltaTime;
+            yield return null;
+        }
+
+        /*   while (col.gameObject.tag.Equals("Player"))
+           {
+            //   counter += Time.deltaTime;
+               yield return null;
+           }*/
+
+        speed = spid;
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if(col.gameObject.tag.Equals ("Player_attack"))
+        if (col.gameObject.tag.Equals("Player_attack"))
         {
             StartCoroutine(Death());
         }
+        else if (col.gameObject.tag.Equals("Player"))
+        {
+            // while (col.gameObject.tag.Equals("Player"))
+            if (col.transform.position.y > this.transform.position.y + 1)
+            {
+                if (!dead) {
+                    dead = true;
+                    Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, true);
+                    //                    m_Collider.enabled = false;
+                    //this.transform.position = new Vector3(transform.position.x, y, transform.position.z);
+                    //this.GetComponent(BoxCollider2D).isTrigger = true;
+                    StartCoroutine(Death());
+                }
+            }
+            else
+            {
+                if(!dead) StartCoroutine(Attack(col));
+            }
+        } /*else
+        {
+            StartCoroutine(Attack(col));
+        }*/
     }
 }

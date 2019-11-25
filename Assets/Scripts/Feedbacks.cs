@@ -17,8 +17,8 @@ public class Feedbacks : MonoBehaviour
         m_Stones.text = l_Stones.ToString();
         int l_Irons = GetResources.GetIron();
         m_Irons.text = l_Irons.ToString();
-        /*int l_Enemies = GetResources.GetEnemies();
-        m_Enemies.text = l_Enemies.ToString();*/
+        int l_Enemies = LifeController.GetKills();
+        m_Enemies.text = l_Enemies.ToString();
         if (m_FullHearts != null)
         {
             int l_Life = LifeController.GetLife();

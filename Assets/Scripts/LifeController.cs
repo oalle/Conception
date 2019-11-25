@@ -9,9 +9,9 @@ public class LifeController : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject m_HeartsComponent;
-    private  static int m_Life = 3;
+    private  static int m_Life;
 
-    
+    static private int m_Kills;
 
     int m_PlayerLayer, m_EnemyLayer;
     bool m_CoroutineAllowed = true;
@@ -24,6 +24,8 @@ public class LifeController : MonoBehaviour
         Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, false);
         m_Sprite = GetComponent<Renderer>();
         m_Color = m_Sprite.material.color;
+        m_Kills = 0;
+        m_Life = 3;
     }
 
     // Update is called once per frame
@@ -53,11 +55,18 @@ public class LifeController : MonoBehaviour
     {
         if (p_Collision.gameObject.tag.Equals("Enemy"))
         {
-            SoundManagerScript.PlaySound("PlayerHit");
-            m_Life--;
-            if (m_CoroutineAllowed)
+            if (p_Collision.transform.position.y + 1 < this.transform.position.y)
             {
-                StartCoroutine("Immortal");
+                m_Kills++;
+            }
+            else
+            {
+                SoundManagerScript.PlaySound("PlayerHit");
+                m_Life--;
+                if (m_CoroutineAllowed)
+                {
+                    StartCoroutine("Immortal");
+                }
             }
         }
     }
@@ -78,5 +87,16 @@ public class LifeController : MonoBehaviour
     public static int GetLife()
     {
         return m_Life;
+    }
+
+    public static int GetKills()
+    {
+        return m_Kills;
+    }
+
+    void OnBecameInvisible()
+    {
+//        Destroy(gameObject);
+        SceneManager.LoadScene("LevelFinishGameOver");
     }
 }

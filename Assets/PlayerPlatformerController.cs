@@ -8,7 +8,7 @@ public class PlayerPlatformerController : PhysicsObject
 
     public AudioClip saut;
 
-    public AudioClip marche;
+//    public AudioClip marche;
 
     protected AudioSource source;
 
@@ -37,7 +37,7 @@ public class PlayerPlatformerController : PhysicsObject
 
         move.x = Input.GetAxis("Horizontal");
 
-        if(grounded)
+        /*if(grounded)
         {
             if (move.magnitude > minMoveDist)
             {
@@ -52,7 +52,7 @@ public class PlayerPlatformerController : PhysicsObject
         else
         {
             //source.Stop(); ;
-        }
+        }*/
 
         if (Input.GetButtonDown("Sprint")&&grounded&&!sprint)
         {

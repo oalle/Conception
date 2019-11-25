@@ -26,4 +26,9 @@ public class ButtonManager : MonoBehaviour
     {
     	Application.Quit();
     }
+
+    public void ResetBtn()
+    {
+        Gestion.Reset();
+    }
 }
