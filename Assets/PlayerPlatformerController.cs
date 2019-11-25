@@ -90,6 +90,16 @@ public class PlayerPlatformerController : PhysicsObject
             numberJump = 0;
         }
 
+        if(Input.GetButtonDown("Fire"))
+        {
+            animator.SetBool("Attack", true);
+        }
+
+        if (Input.GetButtonUp("Fire"))
+        {
+            animator.SetBool("Attack", false);
+        }
+
         bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
 
         if (flipSprite)
