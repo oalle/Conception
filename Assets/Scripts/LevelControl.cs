@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 public class LevelControl : MonoBehaviour
 {
 
-	[SerializeField] private Image customImage;
+    private static bool m_Victory;
 
     // Start is called before the first frame update
     void Start()
     {
-		customImage.enabled = false;        
+        m_Victory = false;
     }
 
     // Update is called once per frame
@@ -25,7 +25,6 @@ public class LevelControl : MonoBehaviour
     {
     	if(other.CompareTag("Player"))
     	{
-    		customImage.enabled = true;
     		StartCoroutine(Exit());
     	}
     }
@@ -33,7 +32,12 @@ public class LevelControl : MonoBehaviour
     IEnumerator Exit()
     {
     	yield return new WaitForSeconds(2);
-    	customImage.enabled = false;
+        m_Victory = true;
    		SceneManager.LoadScene("LevelFinishVictory");
+    }
+
+    public static bool GetVictory()
+    {
+        return m_Victory;
     }
 }

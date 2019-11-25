@@ -96,7 +96,7 @@ public class LifeController : MonoBehaviour
 
     void OnBecameInvisible()
     {
-//        Destroy(gameObject);
-        SceneManager.LoadScene("LevelFinishGameOver");
+        if(!LevelControl.GetVictory())
+            SceneManager.LoadScene("LevelFinishGameOver");
     }
 }
