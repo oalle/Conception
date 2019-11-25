@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Player_attack
   - Enemy
+  - Wood
+  - Stone
+  - Iron
   layers:
   - Default
   - TransparentFX
@@ -19,9 +22,9 @@ TagManager:
   - Background
   - Foreground
   - Player
-  - 
-  - 
-  - 
+  - Wood
+  - Stone
+  - Iron
   - 
   - 
   - 

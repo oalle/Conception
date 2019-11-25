@@ -9,10 +9,9 @@ public class LifeController : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject m_HeartsComponent;
-    private int m_Life = 3;
-    public GameObject m_GameOverText;
-    public GameObject m_RestartButton;
-    public GameObject m_Canvas;
+    private  static int m_Life = 3;
+
+    
 
     int m_PlayerLayer, m_EnemyLayer;
     bool m_CoroutineAllowed = true;
@@ -25,10 +24,6 @@ public class LifeController : MonoBehaviour
         Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, false);
         m_Sprite = GetComponent<Renderer>();
         m_Color = m_Sprite.material.color;
-
-
-        m_GameOverText.SetActive(false);
-        m_RestartButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,13 +31,7 @@ public class LifeController : MonoBehaviour
     {
         if (m_Life == 0)
         {
-            SoundManagerScript.PlaySound("PlayerDeath");
-            m_GameOverText.SetActive(true);
-            m_RestartButton.SetActive(true);
-            m_Color.a = 0f;
-            m_Sprite.material.color = m_Color;
-            m_Canvas.SetActive(false);
-            
+            SceneManager.LoadScene("LevelFinishGameOver");
         }
         else if (m_Life != 3)
         {
@@ -55,12 +44,7 @@ public class LifeController : MonoBehaviour
         Transform l_Rect = transform;
         if (transform.position.y <= -30/2)
         {
-            SoundManagerScript.PlaySound("PlayerDeath");
-            m_GameOverText.SetActive(true);
-            m_RestartButton.SetActive(true);
-            m_Color.a = 0f;
-            m_Sprite.material.color = m_Color;
-            m_Canvas.SetActive(false);
+            SceneManager.LoadScene("LevelFinishGameOver");
         }
         
     }
@@ -89,5 +73,10 @@ public class LifeController : MonoBehaviour
         Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, false);
         m_Color.a = 1f;
         m_Sprite.material.color = m_Color;
+    }
+
+    public static int GetLife()
+    {
+        return m_Life;
     }
 }
