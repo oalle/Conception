@@ -139,7 +139,7 @@ public class Ennemy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag.Equals("Player_attack"))
+        if (col.gameObject.tag.Equals("Player")&&PlayerPlatformerController.GetAttack())
         {
             StartCoroutine(Death());
         }

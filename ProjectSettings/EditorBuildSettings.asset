@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: c1b56be52d88ee44cbd354d3187eb809
@@ -22,5 +22,8 @@ EditorBuildSettings:
     guid: 749bd60c38f97cb4388a0411a41a78c1
   - enabled: 1
     path: Assets/Scenes/LevelFinishVictory.unity
-    guid: 1e1fe8f1c00ea904daf470c8268ce3f9
+    guid: 92cf65c850d22b741bde5e3c7572bea7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
