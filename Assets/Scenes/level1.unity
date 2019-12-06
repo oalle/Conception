@@ -12183,7 +12183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d901481c90e7ba4b9a63bb3e414b954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customImage: {fileID: 1486609940}
 --- !u!1001 &1282497000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14170,14 +14169,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1739163566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33104c9040b3505478a4e97a51ffba09, type: 3}
+  m_Script: {fileID: 11500000, guid: 8615c0c6172fd1049962ab10d7f2eacf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gravityyModifier: 4
   minGroundNormalY: 0.65
   maxSpeed: 12
   saut: {fileID: 8300000, guid: e6e81cc3f0406df4d8496878090b7877, type: 3}
-  marche: {fileID: 0}
   jumpTakeOffSpeed: 20
 --- !u!82 &1739163573
 AudioSource:

@@ -8,6 +8,10 @@ public class PlayerPlatformerController : PhysicsObject
 
     public AudioClip saut;
 
+    private float temps;
+
+    public static bool attack=false;
+
 //    public AudioClip marche;
 
     protected AudioSource source;
@@ -90,14 +94,22 @@ public class PlayerPlatformerController : PhysicsObject
             numberJump = 0;
         }
 
-        if(Input.GetButtonDown("Fire"))
+        if(Input.GetButtonDown("Fire") && (Time.time - temps > 2))
         {
+            attack = true;
             animator.SetBool("Attack", true);
+            temps=Time.time;
         }
 
         if (Input.GetButtonUp("Fire"))
         {
+            
             animator.SetBool("Attack", false);
+        }
+
+        if (attack && (Time.time - temps > 2))
+        {
+            attack = false;
         }
 
         bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
@@ -112,5 +124,9 @@ public class PlayerPlatformerController : PhysicsObject
         animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 
         targetVelocity = move * maxSpeed;
+    }
+    public  static bool GetAttack()
+    {
+        return attack;
     }
 }
