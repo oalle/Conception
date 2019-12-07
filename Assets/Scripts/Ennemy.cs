@@ -17,7 +17,7 @@ public class Ennemy : MonoBehaviour
     BoxCollider2D m_Collider;
 
     private Animator anim;
-    private bool isAlive = true;
+    //private bool isAlive = true;
     private bool movingRight = false;
 
     public Transform groundDetection;

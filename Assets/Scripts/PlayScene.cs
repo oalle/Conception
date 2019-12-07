@@ -15,7 +15,8 @@ public class PlayScene : MonoBehaviour
     void Update()
     {
         if(Input.anyKey){
-			Application.LoadLevel("Gestion");
+//			Application.LoadLevel("Gestion");
+            SceneManager.LoadScene("Gestion");
 		}
     }
 }
