@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
+
+    //DropDownMusique Ddm;
+    //private string musique;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,7 @@ public class ButtonManager : MonoBehaviour
 
     public void PlayGameBtn(string game)
     {
+        //musique = Ddm.GetMusique();
     	SceneManager.LoadScene(game);
     }
 

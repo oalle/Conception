@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\GetResources.cs" />
     <Compile Include="Assets\Scripts\LevelControl.cs" />
     <Compile Include="Assets\Scripts\LifeController.cs" />
+    <Compile Include="Assets\Scripts\MusicChoice.cs" />
     <Compile Include="Assets\Scripts\PlayerPlatformerController.cs" />
     <Compile Include="Assets\Scripts\PlayScene.cs" />
     <Compile Include="Assets\Scripts\SoundManagerDeath.cs" />
