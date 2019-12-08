@@ -14,8 +14,16 @@ public class PlayScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKey){
-			Application.LoadLevel("Gestion");
-		}
+
+    }
+
+    public void LoadLevel()
+    {
+        SceneManager.LoadScene("Gestion");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
