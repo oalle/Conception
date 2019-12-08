@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Feedbacks.cs" />
     <Compile Include="Assets\Scripts\Gestion.cs" />
     <Compile Include="Assets\Scripts\GetResources.cs" />
+    <Compile Include="Assets\Scripts\InstantiatePlatform.cs" />
     <Compile Include="Assets\Scripts\LevelControl.cs" />
     <Compile Include="Assets\Scripts\LifeController.cs" />
     <Compile Include="Assets\Scripts\MusicChoice.cs" />

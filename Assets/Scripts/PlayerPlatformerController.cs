@@ -26,9 +26,12 @@ public class PlayerPlatformerController : PhysicsObject
 
     private Animator animator;
 
+    private static BoxCollider2D col;
+
     // Start is called before the first frame update
     void Awake()
     {
+        col = GetComponent<BoxCollider2D>();
         source = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -125,8 +128,13 @@ public class PlayerPlatformerController : PhysicsObject
 
         targetVelocity = move * maxSpeed;
     }
-    public  static bool GetAttack()
+    public static bool GetAttack()
     {
         return attack;
+    }
+
+    public static BoxCollider2D GetCollider()
+    {
+        return col;
     }
 }
