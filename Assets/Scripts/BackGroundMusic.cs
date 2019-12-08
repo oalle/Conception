@@ -32,7 +32,7 @@ public class BackGroundMusic : MonoBehaviour
     }
 
 void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode) {
-       if (scene.name.Equals("level1")) {
+       if (scene.name == "level1") {
              Destroy(this.gameObject);
              //Debug.Log("Inside the if to stop the DontDestroyOnLoad");
        }
