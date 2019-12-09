@@ -17,6 +17,7 @@ public class LifeController : MonoBehaviour
     bool m_CoroutineAllowed = true;
     Renderer m_Sprite;
     Color m_Color;
+
     void Start()
     {
         m_PlayerLayer = this.gameObject.layer;
