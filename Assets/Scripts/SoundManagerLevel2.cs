@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManagerScript : MonoBehaviour
+public class SoundManagerLevel2 : MonoBehaviour
 {
     public static AudioClip m_PlayerHitSound, m_PlayerDeathSound;
     static AudioSource m_AudioSource;
@@ -26,7 +26,7 @@ public class SoundManagerScript : MonoBehaviour
 
     public static void PlaySound(string p_Clip)
     {
-        switch(p_Clip)
+        switch (p_Clip)
         {
             case "PlayerHit":
                 m_AudioSource.PlayOneShot(m_PlayerHitSound);

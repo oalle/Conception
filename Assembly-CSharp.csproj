@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\PlayerPlatformerController.cs" />
     <Compile Include="Assets\Scripts\PlayScene.cs" />
     <Compile Include="Assets\Scripts\SoundManagerDeath.cs" />
+    <Compile Include="Assets\Scripts\SoundManagerLevel2.cs" />
     <Compile Include="Assets\Scripts\SoundManagerScript.cs" />
     <Compile Include="Assets\Scripts\SoundManagerVictory.cs" />
     <Compile Include="Assets\Scripts\StopBGMusic.cs" />

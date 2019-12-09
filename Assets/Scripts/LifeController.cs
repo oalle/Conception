@@ -66,7 +66,10 @@ public class LifeController : MonoBehaviour
             }
             else
             {
-                SoundManagerScript.PlaySound("PlayerHit");
+                if(SceneManager.GetActiveScene().name == "level1")
+                    SoundManagerScript.PlaySound("PlayerHit");
+                else if(SceneManager.GetActiveScene().name == "level2")
+                    SoundManagerLevel2.PlaySound("PlayerHit");
                 m_Life--;
                 if (m_CoroutineAllowed)
                 {
