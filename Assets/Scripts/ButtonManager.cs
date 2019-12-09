@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ButtonManager : MonoBehaviour
 {
     public Button nextLevel;
-    private static bool onlyVictory = false;
+    private static int onlyVictory = 0;
     public string btnName = "ey";
     private ColorBlock myCB;
     //DropDownMusique Ddm;
@@ -16,7 +16,7 @@ public class ButtonManager : MonoBehaviour
     void Start()
     {
         nextLevel.GetComponent<Button>();
-        if (!onlyVictory)
+        if (onlyVictory == 0)
         {
             nextLevel.enabled = false;
 
@@ -41,9 +41,9 @@ public class ButtonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (LevelControl.GetVictory() && !onlyVictory)
+        if (LevelControl.GetVictory() && onlyVictory == 0)
         {
-            onlyVictory = true;
+            onlyVictory = 1;
             myCB.normalColor = Color.white;
             myCB.highlightedColor = Color.white;
             nextLevel.colors = myCB;
@@ -56,7 +56,7 @@ public class ButtonManager : MonoBehaviour
     {
         //musique = Ddm.GetMusique();
     	//SceneManager.LoadScene(game);
-        if (onlyVictory || game.Equals("level1"))
+        if (onlyVictory == 1 || game.Equals("level1"))
         {
             SceneManager.LoadScene(game);
         }
@@ -70,5 +70,15 @@ public class ButtonManager : MonoBehaviour
     public void ResetBtn()
     {
         Gestion.Reset();
+    }
+
+    void OnDisable()
+    {
+        PlayerPrefs.SetInt("Victory", onlyVictory);
+    }
+
+    void OnEnable()
+    {
+        onlyVictory = PlayerPrefs.GetInt("Victory");
     }
 }
