@@ -8,7 +8,6 @@ public class Ennemy : MonoBehaviour
     private float spid;
     private bool dead = false;
     public float distance;
-//    private float y;
     int m_PlayerLayer, m_EnemyLayer;
     public AudioClip deathClip;
     public AudioClip moveClip;
@@ -28,7 +27,6 @@ public class Ennemy : MonoBehaviour
         anim = GetComponent<Animator>();
         spid = speed;
         m_Collider = GetComponent<BoxCollider2D>();
-//        y = this.transform.position.y;
         m_EnemyLayer = this.gameObject.layer;
         m_PlayerLayer = LayerMask.NameToLayer("Player");
     }
@@ -127,13 +125,6 @@ public class Ennemy : MonoBehaviour
             counter += Time.deltaTime;
             yield return null;
         }
-
-        /*   while (col.gameObject.tag.Equals("Player"))
-           {
-            //   counter += Time.deltaTime;
-               yield return null;
-           }*/
-
         speed = spid;
     }
 
@@ -151,9 +142,6 @@ public class Ennemy : MonoBehaviour
                 if (!dead) {
                     dead = true;
                     Physics2D.IgnoreLayerCollision(m_PlayerLayer, m_EnemyLayer, true);
-                    //                    m_Collider.enabled = false;
-                    //this.transform.position = new Vector3(transform.position.x, y, transform.position.z);
-                    //this.GetComponent(BoxCollider2D).isTrigger = true;
                     StartCoroutine(Death());
                 }
             }
@@ -161,9 +149,6 @@ public class Ennemy : MonoBehaviour
             {
                 if(!dead) StartCoroutine(Attack(col));
             }
-        } /*else
-        {
-            StartCoroutine(Attack(col));
-        }*/
+        }
     }
 }
