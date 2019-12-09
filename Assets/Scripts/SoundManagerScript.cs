@@ -14,7 +14,7 @@ public class SoundManagerScript : MonoBehaviour
 
         m_AudioSource = GetComponent<AudioSource>();
 
-        DontDestroyOnLoad(m_AudioSource);
+        //DontDestroyOnLoad(m_AudioSource);
     }
 
     // Update is called once per frame
