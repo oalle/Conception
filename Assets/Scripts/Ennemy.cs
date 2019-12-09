@@ -146,7 +146,7 @@ public class Ennemy : MonoBehaviour
         else if (col.gameObject.tag.Equals("Player"))
         {
             // while (col.gameObject.tag.Equals("Player"))
-            if (col.transform.position.y > this.transform.position.y + 1)
+            if (col.transform.position.y > this.transform.position.y + 2.5)
             {
                 if (!dead) {
                     dead = true;

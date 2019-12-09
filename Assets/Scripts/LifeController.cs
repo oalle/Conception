@@ -56,7 +56,7 @@ public class LifeController : MonoBehaviour
     {
         if (p_Collision.gameObject.tag.Equals("Enemy"))
         {
-            if (p_Collision.transform.position.y + 1 < this.transform.position.y)
+            if (p_Collision.transform.position.y + 2.5 < this.transform.position.y)
             {
                 m_Kills++;
             }

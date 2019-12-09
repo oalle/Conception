@@ -258,6 +258,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 25552c738770a0941884aab9637807a6,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -278,21 +293,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &50520823 stripped
@@ -1459,6 +1459,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7d2f62258d5b8964fbf15645b93bc485,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -1479,21 +1494,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &274694240 stripped
@@ -1640,6 +1640,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7d2f62258d5b8964fbf15645b93bc485,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -1660,21 +1675,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &276121365 stripped
@@ -1718,7 +1718,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -2.244812, y: -423.3512}
+  m_AnchoredPosition: {x: -2.16, y: -423.377}
   m_SizeDelta: {x: 0.2619, y: 0.0659}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!1 &350398141
@@ -2267,6 +2267,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 25552c738770a0941884aab9637807a6,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -2287,21 +2302,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &465342728 stripped
@@ -3266,6 +3266,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.49999976
       objectReference: {fileID: 0}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -3286,21 +3301,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &516324975 stripped
@@ -3441,6 +3441,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.49999976
       objectReference: {fileID: 0}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -3461,21 +3476,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &570827474 stripped
@@ -10265,6 +10265,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 25552c738770a0941884aab9637807a6,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -10285,21 +10300,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &628947767 stripped
@@ -11127,6 +11127,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 25552c738770a0941884aab9637807a6,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -11147,21 +11162,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &986582722 stripped
@@ -11308,6 +11308,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7d2f62258d5b8964fbf15645b93bc485,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -11328,21 +11343,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1032156242 stripped
@@ -11489,6 +11489,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7d2f62258d5b8964fbf15645b93bc485,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -11509,21 +11524,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1048526174 stripped
@@ -11670,6 +11670,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 25552c738770a0941884aab9637807a6,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -11690,21 +11705,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1058939612 stripped
@@ -12075,6 +12075,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.49999976
       objectReference: {fileID: 0}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -12095,21 +12110,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1147121145 stripped
@@ -12394,6 +12394,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.4999981
       objectReference: {fileID: 0}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -12414,21 +12429,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!1 &1169972601
@@ -12899,6 +12899,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 25552c738770a0941884aab9637807a6,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -12919,21 +12934,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1282497001 stripped
@@ -13380,8 +13380,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347476731}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.42, y: 4.0399995, z: -14}
-  m_LocalScale: {x: 29.085745, y: 29.306433, z: 2.7445636}
+  m_LocalPosition: {x: -11.42, y: 4.04, z: -14}
+  m_LocalScale: {x: 29.085747, y: 29.306433, z: 2.7445636}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -14067,6 +14067,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 25552c738770a0941884aab9637807a6,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -14087,21 +14102,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1458823688 stripped
@@ -14248,6 +14248,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7d2f62258d5b8964fbf15645b93bc485,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -14268,21 +14283,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1484132266 stripped
@@ -14429,6 +14429,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7d2f62258d5b8964fbf15645b93bc485,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -14449,21 +14464,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1526964497 stripped
@@ -14604,6 +14604,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.49999976
       objectReference: {fileID: 0}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -14624,21 +14639,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1557646081 stripped
@@ -14779,6 +14779,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.4999981
       objectReference: {fileID: 0}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -14799,21 +14814,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1567507530 stripped
@@ -15559,6 +15559,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 25552c738770a0941884aab9637807a6,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -15579,21 +15594,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1621776145 stripped
@@ -15897,7 +15897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -2.244812, y: -423.3512}
+  m_AnchoredPosition: {x: -2.159996, y: -423.377}
   m_SizeDelta: {x: 0.2619, y: 0.0659}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!1 &1744110115
@@ -16406,6 +16406,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.49999976
       objectReference: {fileID: 0}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -16426,21 +16441,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1754282061 stripped
@@ -16839,6 +16839,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.4999981
       objectReference: {fileID: 0}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -16859,21 +16874,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &1814287706 stripped
@@ -18126,6 +18126,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 25552c738770a0941884aab9637807a6,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -18146,21 +18161,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &2129981731 stripped
@@ -18307,6 +18307,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7d2f62258d5b8964fbf15645b93bc485,
         type: 3}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_WoodText
+      value: 
+      objectReference: {fileID: 425006762}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_StoneText
+      value: 
+      objectReference: {fileID: 1744110117}
+    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
+        type: 3}
+      propertyPath: m_IronText
+      value: 
+      objectReference: {fileID: 878625258}
     - target: {fileID: 6334586396891363949, guid: 43fbd492f06477d4ebeccbc966010ac7,
         type: 3}
       propertyPath: m_Offset.x
@@ -18327,21 +18342,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.50767326
       objectReference: {fileID: 0}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_WoodText
-      value: 
-      objectReference: {fileID: 425006762}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_StoneText
-      value: 
-      objectReference: {fileID: 1744110117}
-    - target: {fileID: 973753893529640211, guid: 43fbd492f06477d4ebeccbc966010ac7,
-        type: 3}
-      propertyPath: m_IronText
-      value: 
-      objectReference: {fileID: 878625258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fbd492f06477d4ebeccbc966010ac7, type: 3}
 --- !u!224 &2130031156 stripped
