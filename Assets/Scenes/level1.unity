@@ -1315,12 +1315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 1
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1001 &274694239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2123,12 +2118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 2
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1001 &465342727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2562,12 +2552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 0
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!224 &483737092 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 992080673768011296, guid: 43fbd492f06477d4ebeccbc966010ac7,
@@ -2840,12 +2825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 0
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1 &495055084
 GameObject:
   m_ObjectHideFlags: 0
@@ -3128,12 +3108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 1
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1001 &516324974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10953,12 +10928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 3
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1 &944214953
 GameObject:
   m_ObjectHideFlags: 0
@@ -13155,12 +13125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 3
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1 &1347476731
 GameObject:
   m_ObjectHideFlags: 0
@@ -13684,12 +13649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 1
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1 &1410137145
 GameObject:
   m_ObjectHideFlags: 0
@@ -14907,12 +14867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 3
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1 &1573773978
 GameObject:
   m_ObjectHideFlags: 0
@@ -15210,12 +15165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 3
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1 &1595682640
 GameObject:
   m_ObjectHideFlags: 0
@@ -15512,12 +15462,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739163566}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e6e81cc3f0406df4d8496878090b7877, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.236
+  m_Volume: 0.01
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -15608,12 +15558,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739163566}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6c815a9eae8937548aeab7222f04797d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.324
+  m_Volume: 0.01
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -15714,7 +15664,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.23, y: 0.23}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 1.87, y: 4.66}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -16562,12 +16512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 2
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1001 &1814287705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17308,12 +17253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 0
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1 &2008444564
 GameObject:
   m_ObjectHideFlags: 0
@@ -17843,12 +17783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa62964a20ecc849b3ebe4218ae155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tab: 0
   numPlatform: 3
-  numPlat: 0
-  cpt: 0
-  wait: 0
-  counterr: 0
 --- !u!1001 &2129981730
 PrefabInstance:
   m_ObjectHideFlags: 0
