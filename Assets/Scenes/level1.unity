@@ -1718,7 +1718,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -2.16, y: -423.377}
+  m_AnchoredPosition: {x: -2.1600037, y: -423.377}
   m_SizeDelta: {x: 0.2619, y: 0.0659}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!1 &350398141
@@ -11931,6 +11931,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 4.66
       objectReference: {fileID: 0}
+    - target: {fileID: 212991655389708426, guid: e7fcecc826687024e9b52ec763b14088,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 70113744766925634, guid: e7fcecc826687024e9b52ec763b14088,
         type: 3}
       propertyPath: m_Enabled
@@ -15709,7 +15714,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 0.23, y: 0.23}
     newSize: {x: 1.87, y: 4.66}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -15753,7 +15758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -2.159996, y: -423.377}
+  m_AnchoredPosition: {x: -2.1600037, y: -423.377}
   m_SizeDelta: {x: 0.2619, y: 0.0659}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!1 &1744110115

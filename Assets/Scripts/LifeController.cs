@@ -60,6 +60,10 @@ public class LifeController : MonoBehaviour
             {
                 m_Kills++;
             }
+            else if(PlayerPlatformerController.GetAttack())
+            {
+                m_Kills++;
+            }
             else
             {
                 SoundManagerScript.PlaySound("PlayerHit");

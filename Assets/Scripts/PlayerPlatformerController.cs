@@ -28,6 +28,9 @@ public class PlayerPlatformerController : PhysicsObject
 
     private static BoxCollider2D col;
 
+ 
+
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -65,12 +68,14 @@ public class PlayerPlatformerController : PhysicsObject
         {
             maxSpeed = maxSpeed * 1.8f;
             sprint = true;
+            animator.SetBool("Sprint", true);
         }
 
-        if (Input.GetButtonUp("Sprint") && grounded&&sprint)
+        if (Input.GetButtonUp("Sprint")&&sprint)
         {
             maxSpeed = maxSpeed / 1.8f;
             sprint = false;
+            animator.SetBool("Sprint", false);
         }
         
         if (Input.GetButtonDown("Jump")&&grounded)
