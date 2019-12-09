@@ -13,6 +13,8 @@ public class SoundManagerScript : MonoBehaviour
         m_PlayerDeathSound = Resources.Load<AudioClip>("PlayerDeath");
 
         m_AudioSource = GetComponent<AudioSource>();
+
+        DontDestroyOnLoad(m_AudioSource);
     }
 
     // Update is called once per frame
