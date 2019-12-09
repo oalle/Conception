@@ -3052,12 +3052,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 1621039435}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372765002}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e6e81cc3f0406df4d8496878090b7877, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.236
+  m_Volume: 0.001
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3149,12 +3149,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 1621039435}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372765002}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6c815a9eae8937548aeab7222f04797d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.324
+  m_Volume: 0.001
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3263,7 +3263,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2229809, y: 0.2081834}
+  m_Size: {x: 0.1336591, y: 0.2081834}
   m_EdgeRadius: 0
 --- !u!70 &372765008
 CapsuleCollider2D:
@@ -87516,6 +87516,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerStart
       objectReference: {fileID: 0}
+    - target: {fileID: 6296590246793405963, guid: 1aa07ebf249ab0447bfe13e65f364607,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296590246793405963, guid: 1aa07ebf249ab0447bfe13e65f364607,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 47029893748902435, guid: 1aa07ebf249ab0447bfe13e65f364607,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 47029893748902435, guid: 1aa07ebf249ab0447bfe13e65f364607,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9029761830038303851, guid: 1aa07ebf249ab0447bfe13e65f364607,
         type: 3}
       propertyPath: m_Offset.x
@@ -87534,7 +87554,7 @@ PrefabInstance:
     - target: {fileID: 9029761830038303851, guid: 1aa07ebf249ab0447bfe13e65f364607,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.2229809
+      value: 0.1336591
       objectReference: {fileID: 0}
     - target: {fileID: 979208313586503186, guid: 1aa07ebf249ab0447bfe13e65f364607,
         type: 3}
