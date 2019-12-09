@@ -10,14 +10,12 @@ public class InstantiatePlatform : MonoBehaviour
     //private Renderer[] rend = new Renderer[4];
     private TilemapRenderer[] rend = new TilemapRenderer[4];
     private TilemapCollider2D[] col = new TilemapCollider2D[4];
-    public float tab;
     public int numPlatform;
-    public int numPlat;
+    private int numPlat;
     GameObject[] samplePlatform = new GameObject[4];
     private float sum = 0;
-    public int cpt = 0;
-    public float wait = 0;
-    public float counterr = 0;
+    private int cpt = 0;
+    private float wait = 0;
     private bool[] inAction = new bool[4];
   //  private bool canCollide = true;
 
@@ -79,9 +77,7 @@ public class InstantiatePlatform : MonoBehaviour
     {
         float counter = 0;
         int cpt = 0;
-        counterr = 0;
 
-        tab = waitTime;
         waitTime = Mathf.Abs(waitTime);
 
         if (waitTime > 3.0e-03)
@@ -119,7 +115,6 @@ public class InstantiatePlatform : MonoBehaviour
         while (counter < waitTime)
         {
             counter += Time.deltaTime;
-            counterr = counter;
             yield return null;
         }
 
@@ -140,7 +135,6 @@ public class InstantiatePlatform : MonoBehaviour
         while (counter < waitTime)
         {
             counter += Time.deltaTime;
-            counterr = counter;
             yield return null;
         }
         inAction[numPlat] = false;
